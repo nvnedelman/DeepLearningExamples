@@ -68,7 +68,7 @@ printf "Logs written to %s\n" "$LOGFILE"
 INPUT_FILES="$DATA_DIR/training"
 EVAL_FILES="$DATA_DIR/test"
 
-CMD="python3 /workspace/bert/run_pretraining.py"
+CMD="python3 run_pretraining.py"
 CMD+=" --input_files_dir=$INPUT_FILES"
 CMD+=" --eval_files_dir=$EVAL_FILES"
 CMD+=" --output_dir=$RESULTS_DIR"

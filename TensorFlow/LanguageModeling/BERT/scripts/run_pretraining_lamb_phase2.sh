@@ -93,7 +93,7 @@ for DIR_or_file in $DATA_DIR $RESULTS_DIR $BERT_CONFIG ${PHASE1_CKPT}.meta; do
   fi
 done
 
-$mpi python /workspace/bert/run_pretraining.py \
+$mpi python run_pretraining.py \
     --input_files_dir=$INPUT_FILES \
     --init_checkpoint=$PHASE1_CKPT \
     --eval_files_dir=$EVAL_FILES \
